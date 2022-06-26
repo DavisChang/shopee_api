@@ -1,0 +1,17 @@
+@sign = "sign"
+@timestamp = timestamp
+@partner_id = partner_id
+@code = "code"
+@shop_id = shop_id
+
+###
+
+POST  https://partner.test-stable.shopeemobile.com/api/v2/auth/token/get?partner_id={{partner_id}}&timestamp={{timestamp}}&sign={{sign}}
+#POST http://localhost:8888/api/v2/auth/token/get?partner_id={{partner_id}}&timestamp={{timestamp}}&sign={{sign}}
+Content-Type: application/json
+
+{
+  "code": {{code}},
+  "shop_id": {{shop_id}},
+  "partner_id": {{partner_id}},
+}
